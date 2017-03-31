@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+
+
+  </head>
+  <body>
+
+<div class="container center fluid">
+  <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; width: 70%; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+    <form class="col s12" method="post" id="myform">
+      <div class='row'>
+        <div class='col s12'>
+        </div>
+      </div>
+
+      <div class="row">
+         <div class="col s3 m4">
+
+           <div class="card">
+             <div class="card-image">
+
+            <!--   <a class ="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+
+                               <img id="preview" src="" width="1500" alt="">
+                               <input type="file" id="getfile"  accept="image/* ">
+
+             </div>
+
+             <div class="card-content">
+             </div>
+           </div>
+         </div>
+
+    <div  class=" co1 s9 m8">
+
+      <div class="input-field col s5">
+        <input placeholder="약 이름" id="first_name" type="text" class="validate">
+          <input placeholder="제조(수입)업체명" id="first_name" type="text" class="validate">
+          <input placeholder="제조 수입 정보" id="first_name" type="text" class="validate">
+            <input placeholder="보험코드" id="first_name" type="text" class="validate">
+
+      </div>
+
+  </div>
+
+      <div class="row">
+        <form class="col s12">
+
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">외형정보</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">성분정보</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">저장방법</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">효능효과</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">용법용량</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">사용상 주의사항</label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+      <br />
+<center>
+        <div class='row'>
+              <div class='col s3'>&nbsp;</div>
+          <button type='submit' name='btn_cancle' class='col s2 btn btn-small effect indigo'>cancle</button>
+
+            <div class='col s1'>&nbsp;</div>
+
+          <button type='submit' name='btn_submit' class='col s2 btn btn-small effect indigo'>submit</button>
+        </div>
+</center>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+<script>
+      var file = document.querySelector('#getfile');
+
+      file.onchange = function () {
+      var fileList = file.files ;
+
+      // 읽기
+      var reader = new FileReader();
+      reader.readAsDataURL(fileList [0]);
+
+      //로드 한 후
+      reader.onload = function  () {
+          document.querySelector('#preview').src = reader.result ;
+      };
+      };
+</script>
+
+
+<script type="text/javascript">
+$(function () {
+$('#btn-upload').click(function (e) {
+e.preventDefault();
+$('#file').click();
+});
+});
+
+            function changeValue(obj){
+    	        alert(obj.value);
+            }
+</script>
+
+  </body>
+  </html>

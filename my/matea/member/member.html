@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+      <style>
+        body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+        }
+
+        main {
+          flex: 1 0 auto;
+        }
+
+        body {
+          background: #fff;
+        }
+
+        .input-field input[type=date]:focus + label,
+        .input-field input[type=text]:focus + label,
+        .input-field input[type=name]:focus + label,
+        .input-field input[type=tell]:focus + label,
+        .input-field input[type=email]:focus + label,
+        .input-field input[type=address]:focus + label,
+        .input-field input[type=password]:focus + label {
+          color: #e91e63;
+        }
+
+        .input-field input[type=date]:focus,
+        .input-field input[type=text]:focus,
+        .input-field input[type=name]:focus + label,
+        .input-field input[type=tell]:focus + label,
+        .input-field input[type=email]:focus + label,
+        .input-field input[type=address]:focus + label,
+        .input-field input[type=password]:focus {
+          border-bottom: 2px solid #e91e63;
+          box-shadow: none;
+        }
+      </style>
+
+
+
+
+  </head>
+  <body>
+
+<div class="container center fluid">
+  <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; width: 55%; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+    <form class="col s12" method="post" id="myform">
+      <div class='row'>
+        <div class='col s12'>
+        </div>
+      </div>
+
+      <div class="row">
+            <div class="input-field co1 s12">
+            <input class="validate" type="text" name="name" id='name' />
+            <label for="name">Enter your name</label>
+          </div>
+
+      </div>
+
+      <div class='row'>
+        <div class='input-field col s12'>
+          <input class='validate' type='text' name='id' id='id' />
+          <label for='id'>Enter your id</label>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='input-field col s12'>
+          <input class='validate' type='password' name='password' id='pass' />
+          <label for='password'>Enter your password</label>
+        </div>
+
+      </div>
+
+      <div class='row'>
+        <div class='input-field col s12'>
+          <input class='validate' type='password' name='password' id='passcheck' />
+          <label for='password'>password one more plese</label>
+        </div>
+      </div>
+
+
+      <div class="row">
+            <div class="input-field co1 s12">
+            <input class="validate" type="text" name="tell" id='tell' />
+            <label for="tell">Enter your phon</label>
+          </div>
+      </div>
+
+
+      <div class="row">
+            <div class="input-field co1 s12">
+            <input class="validate" type="text" name="email" id='email' />
+            <label for="email">Enter your email</label>
+          </div>
+      </div>
+
+
+      <div class="row">
+
+            <div class="input-field co1 s12">
+            <input class="validate" type="text" name="address" id='address' />
+            <label for="address">Enter your address</label>
+
+           </div>
+          <div class="input-field col s12">
+
+</div>
+
+      </div>
+
+      <form action="#">
+        <p>혈액형</p>
+        <p>
+          <input name="group1" type="radio" id="test1" />
+          <label for="test1">AB</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="test2" />
+          <label for="test2">A</label>
+        </p>
+
+        <p>
+          <input name="group1" type="radio" id="test3" />
+          <label for="test3">B</label>
+        </p>
+
+        <p>
+          <input name="group1" type="radio" id="test4"  />
+          <label for="test4">O</label>
+        </p>
+
+      </form>
+
+      <!-- Switch -->
+      <div class="switch">
+        <label>
+          남
+          <input type="checkbox">
+          <span class="lever"></span>
+          여
+        </label>
+      </div>
+
+
+      <br />
+      <center>
+        <div class='row'>
+          <button type='submit' name='btn_submit' class='col s12 btn btn-large waves-effect indigo'>submit</button>
+        </div>
+      </center>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  </body>
+  </html>

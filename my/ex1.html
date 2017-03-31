@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style type="text/css">
+            .file-input-wrapper {
+                height: 30px;
+                margin: 2px;
+                overflow: hidden;
+                position: relative;
+                width: 118px;
+                background-color: #fff;
+                cursor: pointer;
+            }
+            .file-input-wrapper > input[type="file"] {
+                font-size: 40px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .file-input-wrapper > .btn-file-input {
+                background-color: #494949;
+                border-radius: 4px;
+                color: #fff;
+                display: inline-block;
+                height: 34px;
+                margin: 0 0 0 -1px;
+                padding-left: 0;
+                width: 121px;
+                cursor: pointer;
+            }
+            .file-input-wrapper:hover > .btn-file-input {
+                //background-color: #494949;
+            }
+            </style>
+  </head>
+
+
+          <body>
+              <div class="file-input-wrapper">
+                <button class="btn-file-input">SELECT FILES</button>
+                <input type="file" name="image" id="image" value="" />
+              </div>
+              <span id="img_text" style="float: right;
+              margin-right: -80px;
+              margin-top: -14px;"></span>
+      </body>
+
+          <script>
+              (function($){
+                  $('input[type="file"]').bind('change',function(){
+                      $("#img_text").html($('input[type="file"]').val());
+                  });
+              })(jQuery)
+          </script>
+</html>

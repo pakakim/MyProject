@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+      <style> </style>
+
+
+
+
+  </head>
+  <body>
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="pw" type="password" class="validate">
+              <label for="pw">Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="confirmPW" type="password" class="validate">
+              <label for="confirmPW">Password-check</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="address" type="text" class="validate">
+              <label for="address">address</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s5">
+
+              <div class="input-field inline">
+                <input id="email" type="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+            </div>
+
+            <div class="input-field col m6">
+        <select>
+          <option value="" disabled selected></option>
+          <option value="1">naver.com</option>
+          <option value="2">daum.net</option>
+          <option value="3">google.com</option>
+        </select>
+        <label>email address</label>
+      </div>
+          </div>
+        </form>
+      </div>
+
+
+                <div class="row">
+                  <div class="col s4">
+                    <div class="input-field inline">
+                      <input id="old" type="text" class="validate">
+                      <label for="old">생년</label>
+                    </div>
+                  </div>
+
+                  <div class="input-field col s4 ">
+              <select>
+                <option value="" disabled selected>월</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+
+            </div>
+
+            <div class="col s4">
+              <div class="input-field inline">
+                <input id="day" type="text" class="validate">
+                <label for="day">일</label>
+              </div>
+            </div>
+
+                </div>
+
+      <div class="input-field col s12">
+  <select>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>Materialize Select</label>
+</div>
+
+
+
+      <form action="#">
+        <p>혈액형</p>
+        <p>
+          <input name="group1" type="radio" id="test1" />
+          <label for="test1">AB</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="test2" />
+          <label for="test2">A</label>
+        </p>
+
+        <p>
+          <input name="group1" type="radio" id="test3" />
+          <label for="test3">B</label>
+        </p>
+
+        <p>
+          <input name="group1" type="radio" id="test4"  />
+          <label for="test4">O</label>
+        </p>
+
+      </form>
+
+      <!-- Switch -->
+      <div class="switch">
+        <label>
+          남
+          <input type="checkbox">
+          <span class="lever"></span>
+          여
+        </label>
+      </div>
+
+
+      <br />
+      <center>
+        <div class='row'>
+          <button type='submit' name='btn_submit' class='col s12 btn btn-large waves-effect indigo'>submit</button>
+        </div>
+      </center>
+    </form>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script>  $(document).ready(function() {
+    $('select').material_select();
+  });
+
+
+  </script>
+
+  </body>
+  </html>
